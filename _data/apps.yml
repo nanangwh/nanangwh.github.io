@@ -1,6 +1,11 @@
 # One entry per app. The home page and /privacy/ list are built from this file.
 # To add an app: add an entry here, an icon in assets/icons/<slug>.png,
 # and a policy at privacy/<slug>.md (permalink /privacy/<slug>/).
+# Leave out `play` until the app is live; the page shows "Coming soon".
+
+- slug: frosty-slide
+  name: Frosty Slide
+  tagline: Cozy pixel-art penguin puzzle. One swipe, every penguin moves.
 
 - slug: slime-crew
   name: "Slime Crew: Roguelike Survivor"

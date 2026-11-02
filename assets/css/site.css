@@ -55,6 +55,7 @@ h3 { font-size: 17px; margin: 0 0 2px; }
 .app img { border-radius: 16px; flex: none; }
 .app p { margin: 0; color: var(--muted); font-size: 15px; }
 .app .links { margin-top: 8px; display: flex; flex-wrap: wrap; gap: 16px; font-size: 15px; }
+.app .soon { color: var(--muted); }
 
 .policy-list { padding-left: 20px; }
 

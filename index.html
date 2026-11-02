@@ -16,7 +16,7 @@ layout: default
         <h3>{{ app.name }}</h3>
         <p>{{ app.tagline }}</p>
         <p class="links">
-          <a href="{{ app.play }}">Google Play</a>
+          {% if app.play %}<a href="{{ app.play }}">Google Play</a>{% else %}<span class="soon">Coming soon</span>{% endif %}
           <a href="{{ '/privacy/' | append: app.slug | append: '/' | relative_url }}">Privacy policy</a>
         </p>
       </div>

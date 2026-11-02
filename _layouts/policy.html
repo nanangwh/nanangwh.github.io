@@ -1,0 +1,13 @@
+---
+layout: default
+---
+{% assign app = site.data.apps | where: "slug", page.app | first %}
+<article class="policy">
+  {% if app %}
+  <a class="policy-app" href="{{ app.play }}">
+    <img src="{{ '/assets/icons/' | append: app.slug | append: '.png' | relative_url }}" alt="" width="40" height="40">
+    <span>{{ app.name }}</span>
+  </a>
+  {% endif %}
+  {{ content }}
+</article>

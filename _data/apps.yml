@@ -1,0 +1,28 @@
+# One entry per app. The home page and /privacy/ list are built from this file.
+# To add an app: add an entry here, an icon in assets/icons/<slug>.png,
+# and a policy at privacy/<slug>.md (permalink /privacy/<slug>/).
+
+- slug: slime-crew
+  name: "Slime Crew: Roguelike Survivor"
+  tagline: Offline slime survivor roguelike. 5 elements, 10 fusions. You move, they fight!
+  play: https://play.google.com/store/apps/details?id=com.nnwh.slimecrew
+
+- slug: patchwork-farm
+  name: "Patchwork Farm: Farm Puzzle"
+  tagline: A cozy farming puzzle. Plant the field one plot at a time — no timers, no rush.
+  play: https://play.google.com/store/apps/details?id=com.nnwh.patchwork_farm
+
+- slug: patches
+  name: Patches
+  tagline: A calm, minimalist tiling puzzle for winding down. No pressure, no rush.
+  play: https://play.google.com/store/apps/details?id=com.nnwh.patches
+
+- slug: infinite-maze
+  name: Infinite Maze
+  tagline: Escape the endless maze. Collect, power up, and outrun what hunts you.
+  play: https://play.google.com/store/apps/details?id=com.nnwh.infinite_maze
+
+- slug: sliding-block-puzzle
+  name: Sliding Block Puzzle
+  tagline: Slide numbered tiles into order! 5 grid sizes, beat-the-clock.
+  play: https://play.google.com/store/apps/details?id=com.nnwh.sliding_block_puzzle

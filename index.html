@@ -1,10 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title></title>
-</head>
-<body>
-</body>
-</html>
+---
+layout: default
+---
+<section class="hero">
+  <h1>Small, calm games for Android.</h1>
+  <p>I'm nnwh, an independent developer making offline-friendly puzzle and arcade games — no accounts, no pressure.</p>
+</section>
+
+<section id="apps">
+  <h2>Games</h2>
+  <ul class="apps">
+    {% for app in site.data.apps %}
+    <li class="app">
+      <img src="{{ '/assets/icons/' | append: app.slug | append: '.png' | relative_url }}" alt="{{ app.name }} icon" width="72" height="72" loading="lazy">
+      <div>
+        <h3>{{ app.name }}</h3>
+        <p>{{ app.tagline }}</p>
+        <p class="links">
+          <a href="{{ app.play }}">Google Play</a>
+          <a href="{{ '/privacy/' | append: app.slug | append: '/' | relative_url }}">Privacy policy</a>
+        </p>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section>
+  <h2>Other projects</h2>
+  <ul class="apps">
+    <li class="app">
+      <div>
+        <h3>PixelRefiner</h3>
+        <p>Clean up AI-generated pixel art into production-ready sprites, right in your browser.</p>
+        <p class="links">
+          <a href="https://pixel-refiner.app">pixel-refiner.app</a>
+          <a href="https://github.com/nanangwh/PixelRefiner">Source</a>
+        </p>
+      </div>
+    </li>
+  </ul>
+</section>

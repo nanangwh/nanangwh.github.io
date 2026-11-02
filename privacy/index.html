@@ -1,0 +1,11 @@
+---
+layout: default
+title: Privacy policies
+---
+<h1>Privacy policies</h1>
+<p>Each app has its own privacy policy. Questions? Email <a href="mailto:{{ site.email }}">{{ site.email }}</a>.</p>
+<ul class="policy-list">
+  {% for app in site.data.apps %}
+  <li><a href="{{ '/privacy/' | append: app.slug | append: '/' | relative_url }}">{{ app.name }}</a></li>
+  {% endfor %}
+</ul>

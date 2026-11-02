@@ -1,0 +1,13 @@
+title: nnwh
+description: Small, calm games for Android by nnwh.
+email: nanangwhidayat@gmail.com
+url: https://nanangwh.github.io
+baseurl: ""
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+exclude:
+  - README.md

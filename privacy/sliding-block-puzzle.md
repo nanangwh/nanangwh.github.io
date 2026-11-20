@@ -7,200 +7,270 @@ permalink: /privacy/sliding-block-puzzle/
 
 # Privacy Policy for Sliding Block Puzzle
 
-**Effective date:** 26 July 2026
-**Last updated:** 26 July 2026
+**Effective date:** 20 November 2026
+**Last updated:** 20 November 2026 (adds advertising, gameplay analytics and
+crash reports; the earlier version is in this site's history)
 
-This Privacy Policy explains how **nnwh** ("we", "us", or "our")
-handles information in connection with the mobile game **Sliding Block Puzzle**
-(the "App"). Please read it carefully. By downloading or using the App, you
-agree to the practices described in this policy.
+This Privacy Policy explains how **nnwh** ("we", "us", or "our") handles
+information in connection with the mobile game **Sliding Block Puzzle** (the
+"App"). By downloading or using the App, you agree to the practices described
+in this policy.
 
 ---
 
 ## 1. Summary
 
-**Sliding Block Puzzle does not collect, store, or share any personal
-information.** The App works fully offline. All game data — such as your best
-times, move counts, statistics, saved board, and settings — is stored **only on
-your own device** and never sent to us or to any third party.
-
-We do not require an account, we do not track you, and we do not display ads or
-run analytics in the current version of the App.
-
----
-
-## 2. Information We Collect
-
-### 2.1 Data stored locally on your device
-
-To make the game work and to remember your progress, the App saves the following
-information **locally on your device only**, using your device's standard app
-storage:
-
-- Your **best completion times** and **best (fewest) move counts** for each grid
-  size;
-- Aggregate **game statistics** (games played, games solved, and total solve
-  time used to calculate averages);
-- Your **current game state** (the arrangement of tiles, elapsed time, and move
-  count), so a game in progress can be resumed;
-- Your **preferences** (sound on/off, vibration on/off, and whether you have
-  seen the tutorial).
-
-This data:
-
-- Never leaves your device through the App;
-- Is not transmitted to us or to any server;
-- Is not accessible to us in any way.
-
-(If you have enabled your operating system's own device backup, such as Android
-Auto Backup, a copy of this local app data may be included in that backup under
-your own account and Google's terms. This is a function of your device, not of
-the App.)
-
-### 2.2 Information we do **not** collect
-
-We do **not** collect, request, or have access to any of the following:
-
-- Your name, email address, phone number, or any contact details;
-- Your precise or approximate location;
-- Your photos, contacts, files, camera, or microphone;
-- Any advertising identifiers;
-- Any usage analytics or behavioral data.
+- Your **records, statistics, saved games and settings stay on your device**.
+  We never receive them.
+- The App is free and shows **advertisements from Google AdMob**. To choose and
+  measure ads, Google collects device information, including your device's
+  **advertising ID** where you allow it (Section 4).
+- The App uses **Firebase Analytics** and **Firebase Crashlytics** to tell us
+  how the game is played and when it crashes. They send **gameplay events and
+  crash reports** to Google (Section 3).
+- We do **not** ask for an account, your name, your email address or any
+  contact details, and we cannot tell who you are from the data we receive.
+- The game itself plays **fully offline**. Ads, analytics and crash reports
+  need a connection; offline, no ads are shown and reports are sent later.
 
 ---
 
-## 3. Google Play In-App Review
+## 2. Information Stored Only on Your Device
 
-The App includes an optional "Rate app" feature that uses the **Google Play
-In-App Review API** to let you leave a review without leaving the game. When you
-use this feature, the review flow is handled entirely by Google Play. We do not
-receive any personal information from it. Your interaction with Google Play is
-governed by Google's own privacy policy:
-<https://policies.google.com/privacy>.
+To remember your progress, the App saves the following **locally on your
+device**, using your device's standard app storage:
 
----
+- Your **best times** and **best (fewest) move counts** for each board size;
+- **Game statistics**: games played, games solved, and total solve time (used
+  for averages);
+- Your **game in progress** for each board size (the tile positions, time,
+  move count, and how many hints it has used), so you can pick up where you
+  left off;
+- Your **settings** (sound, vibration, tile style) and whether you have seen
+  the tutorial;
+- A few **ad timing counters**: when the App was first opened, when the last
+  full-screen ad was shown, and how many puzzles you have solved since. They
+  are used only to keep full-screen ads infrequent.
 
-## 4. Device Permissions
+The App does not send this data to us or to any server.
 
-The App is designed to use as few device capabilities as possible:
-
-- **Vibration / haptics** — used to provide tactile feedback when you move a
-  tile or solve a puzzle. You can turn this off in Settings. It does not collect
-  any data.
-
-The App does not request access to your location, contacts, camera, microphone,
-photos, or storage of personal files.
-
----
-
-## 5. Third-Party Services
-
-The current version of the App **does not include** any third-party advertising,
-analytics, or tracking software development kits (SDKs). The only third-party
-platform involved is **Google Play**, which distributes the App and provides the
-optional in-app review feature described above.
+(If you have turned on your device's own backup, such as Android Auto Backup, a
+copy of this data may be included in that backup under your own account and the
+platform's terms. This is a function of your device, not of the App.)
 
 ---
 
-## 6. Future Changes — Advertising and Analytics
+## 3. Gameplay Analytics and Crash Reports
 
-We may, in a future version of the App, introduce **advertising** (for example,
-Google AdMob) and/or **analytics** (for example, Google Analytics for Firebase)
-to support and improve the App. If and when we do:
+### 3.1 Gameplay analytics (Firebase Analytics)
 
-- We will **update this Privacy Policy** before or at the time those features are
-  released, and update the "Last updated" date above;
-- We will describe what data those services collect and link to their privacy
-  policies;
-- Where required by law (for example, in the European Economic Area, the United
-  Kingdom, and similar jurisdictions), we will request your **consent** before
-  any non-essential tracking or personalized advertising takes place;
-- Because the App is suitable for **all ages**, any advertising we introduce that
-  may be served to children will be limited to **non-personalized ads** in line
-  with the Google Play Families Policy and applicable children's privacy laws.
+The App uses Google's Firebase Analytics to understand how the game is played,
+for example which board sizes people enjoy and where they get stuck. It
+collects:
 
-Until such an update is published, no advertising or analytics data is collected.
+- **Gameplay events:** a puzzle being started (board size); a puzzle being
+  solved (board size, time in seconds, number of moves, number of hints used,
+  and whether it was a new best); a puzzle being restarted partway (board size
+  and moves so far); and a hint being used (board size);
+- **An app-instance identifier:** a random ID created when the App is
+  installed. It identifies the installation, not you, and is reset if you
+  clear the App's data or reinstall it;
+- **Device and app information:** device model, operating-system version,
+  language, screen size, and the App's version, plus usage such as sessions
+  and screens shown;
+- **Approximate location:** your country or region and city, which Google
+  derives from your IP address. The App never uses your device's precise
+  location.
 
----
+### 3.2 Crash reports (Firebase Crashlytics)
 
-## 7. Children's Privacy
+When the App crashes or hits an error, Firebase Crashlytics sends a report so
+we can fix it. A report contains:
 
-Sliding Block Puzzle is a family-friendly game suitable for **all ages**. We do
-**not** knowingly collect any personal information from anyone, including
-children under the age of 13 (or under 16 in some jurisdictions).
-
-Because the App collects no personal data at all, it does not create a privacy
-risk for children. If you believe a child has somehow provided us with personal
-information, please contact us (see Section 12) and we will address it promptly.
-We comply with the U.S. Children's Online Privacy Protection Act (COPPA), the
-Google Play Families Policy, and applicable children's data protection laws.
-
----
-
-## 8. Data Retention and How to Delete Your Data
-
-Because all App data is stored locally on your device, **you are in full control
-of it**. You can delete all data saved by the App at any time by:
-
-- **Clearing the App's data** in your device settings
-  (Settings → Apps → Sliding Block Puzzle → Storage → Clear data), or
-- **Uninstalling** the App, which removes all locally stored data.
-
-We do not retain any of your data because we never receive it.
+- The **error and the code path** that led to it (a stack trace);
+- **Device state** when it happened: device model, operating-system version,
+  orientation, free memory and storage, and the App's version;
+- A random **installation identifier** used to count how many installations a
+  crash affects.
 
 ---
 
-## 9. Data Security
+## 4. Advertising (Google AdMob)
 
-We take a privacy-by-design approach: the most effective protection for your data
-is that it never leaves your device. Data stored on your device is protected by
-your device's own operating-system security. No method of electronic storage is
-100% secure, but because the App does not transmit data, the risk of interception
-in transit does not apply.
+**Where ads appear.**
+
+- A **banner** at the bottom of the menu and statistics screens;
+- An occasional **full-screen ad** between games, only after you have solved
+  a puzzle and chosen to play again or go back to the menu. Never during a
+  puzzle, never after your very first solve, at most once every two solves and
+  every three minutes, and none in the first minutes after you install the
+  App;
+- An optional **rewarded video**: the first time you ask for a hint in a game,
+  you can choose to watch a short video to turn hints on for that game. If no
+  video is available, the hint is given anyway.
+
+Ads are requested with a maximum content rating suitable for general
+audiences (PG).
+
+**What is collected.** To select and measure ads, Google AdMob may collect and
+process:
+
+- Your device's **advertising identifier** (the Android Advertising ID, or on
+  Apple devices the Identifier for Advertisers where you have permitted it);
+- **Device and technical information**, such as device model, operating
+  system version, language, your IP address, and coarse location derived from
+  it;
+- **Ad interaction data**, such as which ads were shown, whether an ad was
+  viewed, watched or tapped, and crash or performance diagnostics relating to
+  the ad.
+
+This information is collected by Google directly from your device. We do not
+receive it in a form that identifies you; we see only totals, such as how many
+ads were shown.
+
+**Consent where it is required.** In the European Economic Area, the United
+Kingdom, Switzerland, and other places whose law requires it (including some
+US states), the App shows Google's consent or privacy message before ads are
+requested, using Google's User Messaging Platform. Where it applies, you can
+change your answer at any time from **Settings → ad privacy** inside the App.
+On iOS, the App asks for your permission before your advertising identifier is
+used for tracking.
+
+**Your other choices.** You can limit or reset ad personalization at any time
+using the controls built into your device:
+
+- **Android:** Settings → Google → All services → Ads, where you can delete or
+  reset your advertising ID and opt out of ad personalization;
+- **iOS:** Settings → Privacy & Security → Tracking, and Settings → Privacy &
+  Security → Apple Advertising.
+
+Opting out does not remove ads; it means the ads you see are less likely to be
+based on your interests.
+
+**Links in ads.** Ads may link to other websites or app store pages that we do
+not operate. If you tap one, that site's own privacy policy applies.
 
 ---
 
-## 10. International Users and Data Transfers
+## 5. How We Use This Information
 
-The App does not transfer your data internationally because it does not collect
-or transmit any personal data. You can use the App from anywhere; all processing
-happens locally on your device.
+We use analytics and crash data only to:
+
+- Find and fix crashes and errors;
+- Improve the game, for example its puzzles and hints;
+- Understand, in total, how many people play and how far they get.
+
+We do **not** build profiles of individual players, and we do **not** sell
+personal data. Ads are selected by Google, as described in Section 4.
+
+---
+
+## 6. Who Receives This Information
+
+All of the data described in Sections 3 and 4 is sent to and processed by
+**Google** (Google LLC and Google Ireland Limited). For analytics and crash
+reports, Google acts as our service provider. For advertising, Google also
+uses the information under its own policies. Google may process it on servers
+outside your country. It is sent over encrypted (HTTPS) connections.
+
+- How Google uses information from apps that use its services:
+  <https://policies.google.com/technologies/partner-sites>
+- Google's privacy policy: <https://policies.google.com/privacy>
+- AdMob and user data: <https://support.google.com/admob/answer/6128543>
+- Firebase privacy and security: <https://firebase.google.com/support/privacy>
+
+The App is distributed through Google Play (and, where available, the Apple
+App Store), whose own privacy policies apply to your use of the store. The
+optional "rate app" feature uses the store's own review card; we do not
+receive any personal information from it.
+
+---
+
+## 7. Device Permissions
+
+The App requests only ordinary, automatically granted permissions:
+
+- **Internet access** and **network state**, to load ads and send the data
+  described in Sections 3 and 4 when the device is online;
+- **Advertising ID** (Android), used by Google AdMob as described in
+  Section 4;
+- **Vibration**, for tactile feedback when you move a tile or solve a puzzle.
+  You can turn it off in Settings;
+- **Tracking permission** (iOS only), asked for once; you can refuse it.
+
+The App does not use your precise location, contacts, camera, microphone,
+photos, or files, and it does not need an internet connection to play.
+
+---
+
+## 8. Children's Privacy
+
+Sliding Block Puzzle is a general-audience game. It is not directed at
+children under the age of 13, and we do not knowingly collect personal
+information from them. The App never asks for a name, an email address, or
+any other contact details. If you believe a child has provided personal
+information through the App, please contact us (see Section 12).
+
+---
+
+## 9. Data Retention and Deletion
+
+**On your device.** You are in full control of your saved data. You can delete
+it at any time by:
+
+- **Clearing the App's data** in your device settings (on Android: Settings →
+  Apps → Sliding Block Puzzle → Storage → Clear data), or
+- **Uninstalling** the App.
+
+Either one also resets the random identifiers described in Section 3, so later
+analytics data is no longer linked to earlier data.
+
+**Held by Google.** Analytics data tied to an app-instance identifier is kept
+for up to 14 months, and crash reports for 90 days, after which Google deletes
+them. Totals that cannot be linked to an installation may be kept longer.
+Advertising data is kept by Google under its own policies, linked in
+Section 6.
+
+Because the App has no accounts, we cannot look up one person's data by name
+or email address. If you would like your analytics data deleted, contact us
+(see Section 12) and we will tell you how to find your app-instance identifier
+so that we can ask Google to delete the data linked to it.
+
+---
+
+## 10. Data Security
+
+Your saved data is protected by your device's own operating-system security.
+Analytics, crash and advertising data is encrypted in transit and stored by
+Google under its security practices. No method of transmission or storage is
+completely secure, but we collect as little as we can.
 
 ---
 
 ## 11. Your Privacy Rights
 
-Even though we do not collect personal data, we respect the privacy rights you may
-have under applicable laws.
+Depending on where you live, you may have rights under laws such as the GDPR
+(European Economic Area, United Kingdom, and Switzerland) or the CCPA/CPRA and
+other US state laws, including the right to access, correct, or delete your
+personal data, to object to its processing, to withdraw consent, and to opt
+out of targeted advertising or the "sale" or "sharing" of personal data.
 
-### 11.1 European Economic Area, United Kingdom, and Switzerland (GDPR)
+- **Advertising:** where consent is required, ads use your data only as you
+  allowed in the consent message, which you can change from Settings → ad
+  privacy. You can also use the device controls in Section 4.
+- **Analytics and crash reports:** where the GDPR applies, we process them on
+  the basis of our legitimate interest in keeping the App working and
+  improving it.
 
-If you are located in these regions, you have the right to access, rectify, erase,
-restrict, or object to the processing of your personal data, and the right to data
-portability, where applicable. Since we do not collect or hold any personal data
-about you, we have nothing to provide, correct, or delete on our side — the data
-lives only on your device and can be removed as described in Section 8. You also
-have the right to lodge a complaint with your local data protection authority.
-
-### 11.2 California, United States (CCPA/CPRA)
-
-If you are a California resident, you have the right to know what personal
-information a business collects about you, to request deletion, and to opt out of
-the "sale" or "sharing" of personal information. We **do not** collect, sell, or
-share any personal information, so there is nothing to disclose, delete, or opt
-out of. We do not discriminate against users for exercising their privacy rights.
-
-### 11.3 Other jurisdictions
-
-Users in other regions may have similar rights under local law. The same applies:
-we hold no personal data about you.
+To exercise any of your rights, contact us (see Section 12). We will not treat
+you differently for doing so.
 
 ---
 
 ## 12. Contact Us
 
-If you have any questions, concerns, or requests regarding this Privacy Policy or
-your privacy while using Sliding Block Puzzle, please contact us at:
+If you have any questions about this Privacy Policy or your privacy while using
+Sliding Block Puzzle, please contact us at:
 
 **Email:** nanangwhidayat@gmail.com
 
@@ -208,10 +278,6 @@ your privacy while using Sliding Block Puzzle, please contact us at:
 
 ## 13. Changes to This Privacy Policy
 
-We may update this Privacy Policy from time to time, for example to reflect new
-features or changes in the law. When we do, we will revise the "Last updated" date
-at the top of this policy and, where the changes are significant (such as
-introducing advertising or analytics), we will provide a more prominent notice
-within the App or on the App's store listing. We encourage you to review this
-policy periodically. Your continued use of the App after an update takes effect
-constitutes your acceptance of the revised policy.
+If a future version of the App handles data differently, we will update this
+Privacy Policy before that version is released, revise the dates above, and
+describe what is collected and why.
